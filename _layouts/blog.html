@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<!-- File: _layouts/blog.html -->
+<div class="container page">
+  <h1 class="title">{{ page.title }}</h1>
+
+  <!-- Nội dung mô tả blog (lấy từ page.content - blog.md) -->
+  <div class="post-content">
+    {{ page.content }}
+  </div>
+
+  <hr />
+
+  <!-- Vòng lặp hiển thị tất cả các post -->
+  {% for post in site.posts %}
+    <article class="post-item">
+      <h2 class="post-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      <p class="post-meta">
+        <small>Ngày đăng: {{ post.date | date: "%d-%m-%Y" }}</small>
+      </p>
+      <div class="post-excerpt">
+        {{ post.excerpt }}
+      </div>
+      <p>
+        <a href="{{ post.url | relative_url }}">[Đọc tiếp]</a>
+      </p>
+      <hr />
+    </article>
+  {% endfor %}
+</div>

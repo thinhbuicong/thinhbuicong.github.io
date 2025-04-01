@@ -1,0 +1,27 @@
+title: "Thinh Bui"
+description: "Kiến thức - Kinh nghiệm - Trải nghiệm"
+
+# BỎ hoặc comment lại dòng 'theme: minima'
+# theme: minima
+
+# Tùy chọn: đặt URL, baseurl nếu site của bạn không phải dạng <username>.github.io
+# url: "https://<username>.github.io"
+# baseurl: ""
+
+# Header pages để xuất hiện trên menu (sẽ tự động hoá một chút nếu ta code layout):
+header_pages:
+  - index.md
+  - about.md
+  - blog.md
+  - contact.md
+
+# Các config khác tuỳ bạn:
+# author:
+#   name: "Bui Cong Thinh"
+#   email: "email@example.com"
+
+# Bạn có thể thêm plugin nếu muốn
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+

@@ -1,0 +1,18 @@
+<!-- Script toggle dark/light theme -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const body = document.body;
+  const toggle = document.getElementById('dark-mode-toggle');
+  toggle.addEventListener('click', function() {
+    body.classList.toggle('colorscheme-dark');
+    body.classList.toggle('colorscheme-light');
+  });
+});
+</script>
+
+<!-- Cookie consent nếu cần
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+  window.cookieconsent.initialise({...});
+</script>
+-->

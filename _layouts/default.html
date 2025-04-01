@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  {% include head.html %}
+</head>
+
+<body class="preload-transitions colorscheme-dark">
+  <!-- Nút Dark/Light mode -->
+  <div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+      <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <!-- Thanh navigation -->
+  <nav class="navigation">
+    <section class="container">
+      <!-- Tiêu đề site -->
+      <a class="navigation-title" href="{{ site.baseurl | default: '/' }}">
+        {{ site.title }}
+      </a>
+      <!-- Menu toggle cho mobile -->
+      <input type="checkbox" id="menu-toggle"/>
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <!-- Menu link, dựa trên header_pages -->
+      <ul class="navigation-list">
+        {% for page in site.pages %}
+          {% if site.header_pages contains page.name %}
+            <li class="navigation-item">
+              <a class="navigation-link" href="{{ page.url | prepend: site.baseurl }}">
+                {{ page.title }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+  </nav>
+
+  <!-- Nội dung chính -->
+  <main class="wrapper">
+    <div class="content container page">
+      {{ content }}
+    </div>
+  </main>
+
+  <!-- Nếu cần footer, bạn có thể thêm dưới đây -->
+
+  {% include scripts.html %}
+</body>
+</html>

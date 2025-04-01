@@ -1,0 +1,43 @@
+/* assets/css/coder.min.css */
+/* Light mode styles */
+body.colorscheme-light {
+  background: #f6f8fa;
+  color: #333;
+  font-family: sans-serif;
+  margin: 0; padding: 0;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.navigation {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.navigation-title {
+  font-weight: bold;
+  margin-right: 2rem;
+}
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navigation-item {
+  margin-right: 1rem;
+}
+.navigation-link {
+  text-decoration: none;
+  color: #0366d6;
+}
+.float-container {
+  position: fixed; 
+  top: 1rem; 
+  right: 1rem;
+}
+.colorscheme-toggle {
+  cursor: pointer;
+  text-decoration: none;
+}

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<!-- File: _layouts/post.html -->
+<article class="post-content">
+  <header>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      Ngày đăng: {{ page.date | date: "%d-%m-%Y" }}
+      {% if page.categories %}
+        | Thể loại: {{ page.categories | join: ", " }}
+      {% endif %}
+    </p>
+  </header>
+
+  <!-- Nội dung chính của bài viết -->
+  {{ content }}
+</article>

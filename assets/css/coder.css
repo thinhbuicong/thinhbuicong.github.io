@@ -1,0 +1,2 @@
+<link rel="stylesheet" href="{{ '/assets/css/coder.min.css' | relative_url }}" media="screen">
+<link rel="stylesheet" href="{{ '/assets/css/coder-dark.min.css' | relative_url }}" media="screen">

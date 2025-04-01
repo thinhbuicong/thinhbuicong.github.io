@@ -1,0 +1,15 @@
+/* assets/css/coder-dark.min.css */
+/* Dark mode styles override */
+body.colorscheme-dark {
+  background: #1f2124;
+  color: #cfcfe8;
+  font-family: sans-serif;
+  margin: 0; padding: 0;
+}
+.navigation {
+  background: #343c66;
+  border-bottom: 1px solid #444;
+}
+.navigation-link {
+  color: #f71559;
+}
