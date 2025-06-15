@@ -2,8 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]     # Kích hoạt khi có push lên nhánh 'main'
-  workflow_dispatch:       # Cho phép chạy thủ công trên giao diện Actions
+    branches:
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -14,14 +15,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Install, build, and upload site
-        uses: withastro/action@v3  # Sử dụng action chính thức của Astro để build
+        uses: withastro/action@v3
         with:
-          package-manager: pnpm@latest   # Dùng pnpm để cài và build (dựa trên pnpm-lock.yaml)
-          node-version: 20               # Dùng Node.js 20
+          node-version: 20    # chỉ định Node.js, không khai báo package-manager
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -29,6 +29,5 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
