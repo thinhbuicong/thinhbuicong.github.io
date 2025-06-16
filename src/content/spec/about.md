@@ -1,5 +1,7 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+My name is Bui Cong Thinh, and I was born in Quang Ninh, Vietnam. I am a Control and Automation Engineer currently pursuing a Master of Mechatronic Engineering. I created this blog to build a personal website using GitHub Pages, and I hope to share some exciting insights about control and automation engineering with everyone.
+
+Thank you, Saicaca, for sharing the sample source code [Fuwari](https://github.com/saicaca/fuwari).
 
 ::github{repo="saicaca/fuwari"}
 

@@ -9,7 +9,7 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "Thinh",
-	subtitle: "Demo Site",
+	subtitle: "Site",
 	lang: "en", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -55,7 +55,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Thinh Bui",
-	bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+	bio: "Control System & Automation Engineer.",
 	links: [
 		{
 			name: "Twitter",
@@ -64,11 +64,11 @@ export const profileConfig: ProfileConfig = {
 			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://twitter.com",
 		},
-		/* {
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
-		}, */
+		{
+			name: "LikedIn",
+			icon: "fa6-brands:linkedin",
+			url:"https://www.linkedin.com/in/congthinhbui/",
+		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
@@ -78,7 +78,7 @@ export const profileConfig: ProfileConfig = {
 };
 
 export const licenseConfig: LicenseConfig = {
-	enable: true,
+	enable: false,
 	name: "CC BY-NC-SA 4.0",
 	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
 };
